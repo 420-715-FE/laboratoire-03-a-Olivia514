@@ -10,6 +10,24 @@
     <nav>
         <a href="../index.php">Retour</a>
     </nav>    
-    <h1>Tableau de nombres v1</h1>
+    <h1>Tableau de nombres v1</h1><br>
+    
+
+    <?php
+    $tableau = [];
+
+    for($i = 1; $i <= 100; $i++){
+        $tableau[] = $i;
+    }
+
+    ?><ul><?php
+
+    foreach($tableau as $element){
+        echo '<li>', $element, '</li>';
+    }
+
+    ?></ul>
+    
+
 </body>
 </html>
