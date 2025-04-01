@@ -24,7 +24,13 @@ $matrice = $dessin;
 
         // AJOUTEZ VOTRE CODE CI-DESSOUS
         // NE MODIFIEZ RIEN AVANT CETTE LIGNE
-
+        
+        for($i = 0; $i < count($dessin); $i++){
+            for($j = 0; $j < count($dessin[$i]); $j++){
+                echo $dessin[$i][$j];  
+            }
+            ?><br><?php
+        }
         
 
         // NE MODIFIEZ RIEN APRÈS CETTE LIGNE

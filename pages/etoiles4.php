@@ -4,7 +4,18 @@ $matrice = [];
 
 // AJOUTEZ VOTRE CODE CI-DESSOUS
 
+$matrice = [];
 
+for ($i = 0; $i <= 9; $i++) {
+    $matrice[] = [];
+    for ($j = 9; $j > $i; $j--) {
+        $matrice[$i][] = '';
+        if($i == $j){return $j;}
+    }
+    for($k = 10 - $j; $k <= 10; $k++){
+        $matrice[$i][$k] = '*';
+    }
+}
 
 // NE MODIFIEZ RIEN APRÈS CETTE LIGNE
 

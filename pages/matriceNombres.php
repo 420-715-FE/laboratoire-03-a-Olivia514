@@ -4,7 +4,19 @@ $matrice = [];
 
 // AJOUTEZ VOTRE CODE CI-DESSOUS
 
+$matrice = [];
+//$chiffre = 0;
 
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 1; $j <= 10; $j++) {
+        if($j == 10){
+            $k = $i + 1;
+            $chiffre = $i + 1 . 0;
+        }
+        else{$chiffre = $i . $j;}
+        $matrice[$i][$j] = $chiffre;
+    }
+}
 
 // NE MODIFIEZ RIEN APRÈS CETTE LIGNE
 
